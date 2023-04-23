@@ -30,6 +30,10 @@ def go(args):
     logger.info("apply datetime type to last_review column")
     df['last_review'] = pd.to_datetime(df['last_review'])
 
+    # consider geolocation boundary condition
+    logger.info("apply geolocation boundary condition")
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
     # save the cleaned data
     df.to_csv(args.output_artifact, index=False)
 
