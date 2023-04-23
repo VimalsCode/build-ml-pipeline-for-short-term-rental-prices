@@ -567,3 +567,12 @@ you have trained your new model on the new data.
 ## License
 
 [License](LICENSE.txt)
+
+## Project Submission
+Github: https://github.com/VimalsCode/build-ml-pipeline-for-short-term-rental-prices
+Weights&Bias: https://wandb.ai/vimalkumar-j/nyc_airbnb?workspace=user-vimalkumar-j
+
+### Model Training Details
+- spring-sky-42 execution refers to initial Model Training and marked for production
+- bumbling-moon-52 execution refers to Model Training 2 with sample2
+
